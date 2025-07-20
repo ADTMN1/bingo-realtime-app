@@ -24,4 +24,6 @@ A multiplayer Bingo game built with **React + Vite**, using **Socket.IO** for re
 - **Dev Tools**: ESLint, PostCSS
 
 ---
+<img width="688" height="389" alt="image" src="https://github.com/user-attachments/assets/e6bf599a-6766-42a0-9454-f316f850df4d" />
+
 
