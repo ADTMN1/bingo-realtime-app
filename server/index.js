@@ -2,8 +2,16 @@ const express = require("express");
 const http = require("http");
 const { Server } = require("socket.io");
 require("dotenv").config();
+const cors = require("cors");
 
 const app = express();
+app.use(
+  cors({
+    origin: process.env.FRONTEND_ORIGIN || "*",
+    methods: ["GET", "POST"],
+  })
+);
+
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
